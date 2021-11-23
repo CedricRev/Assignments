@@ -1,6 +1,6 @@
 public class ArrayStack {
     private final int capacity = 5;
-    private final String[] data = new String[capacity];
+    private final SinglyLinkedList[] data = new SinglyLinkedList[capacity];
     private int t = -1;
     private int size = 0;
 
@@ -47,7 +47,7 @@ public class ArrayStack {
 
         public void insertLast(Object value) {
             ListNode newNode = new ListNode(value);
-            if(this.head == null) { 
+            if(this.head == null) {
                 this.head = newNode;
             }
             else {
@@ -61,7 +61,7 @@ public class ArrayStack {
 
     }
 
-    public void push(String value) {
+    public void push(SinglyLinkedList value) {
         t = (t + 1) % capacity;
         data[t] = value;
 
@@ -70,8 +70,8 @@ public class ArrayStack {
         }
     }
 
-    public String pop() {
-        String value = data[t];
+    public SinglyLinkedList pop() {
+        SinglyLinkedList value = data[t];
         data[t] = null;
         t--;
         return value;
@@ -90,9 +90,9 @@ public class ArrayStack {
         sll1.insertLast("BSEC");
         sll1.insertLast(180);
         sll1.insertLast(60.25);
-        stack.push(sll1.toString());
+        stack.push(sll1);
 
-        String record = stack.pop();
+        SinglyLinkedList record = stack.pop();
         System.out.println(record);
     }
 }
