@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ArrayStack1 {
+public class ArrayStack {
     private final int capacity = 5;
     private final Object[] data = new Object[capacity];
     private int t = -1;
