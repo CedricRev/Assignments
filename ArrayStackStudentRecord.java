@@ -1,4 +1,4 @@
-public class ArrayStack {
+public class ArrayStackStudentRecord {
     private final int capacity = 5;
     private final SinglyLinkedList[] data = new SinglyLinkedList[capacity];
     private int t = -1;
@@ -79,7 +79,7 @@ public class ArrayStack {
 
 
     public static void main(String[] args) {
-        ArrayStack stack = new ArrayStack();
+        ArrayStackStudentRecord stack = new ArrayStackStudentRecord();
 
         SinglyLinkedList sll1 = new SinglyLinkedList();
         sll1.insertLast("2020-0001");
