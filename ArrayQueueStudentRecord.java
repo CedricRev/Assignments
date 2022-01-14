@@ -53,7 +53,7 @@ public class ArrayQueue {
     }
 
     public static void main(String[] args) {
-        ArrayQueue queue = new ArrayQueue();
+        ArrayQueueStudentRecord queue = new ArrayQueueStudentRecord();
         queue.enqueue(new Record("2020-0001", "Earl Ryan", "Aleluya", 'M', 22, "BSEC", 180, 60.25));
         Record record = queue.dequeue();
         System.out.println(record);
